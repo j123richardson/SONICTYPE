@@ -1,0 +1,273 @@
+@font-face {
+  font-family: Lausanne;
+  src: url(Lausanne-Regular.otf);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 0, 0);
+  cursor: none;
+}
+canvas {
+  display: block;
+  cursor: none;
+}
+
+#input1 {
+  color: white;
+  padding: 1%;
+  text-align: center;
+  position: absolute;
+  bottom: -2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Lausanne;
+  background: transparent;
+  outline: 0;
+  border: transparent;
+  border-bottom: 2px solid white;
+  width: 18%;
+  font-size: calc(3vmax - 2px);
+  text-transform: uppercase;
+  cursor: none;
+}
+
+#mouse {
+  border: solid;
+  background-color: transparent;
+  color: white;
+  border-width: 1px;
+  padding: 10px 30px;
+  border-radius: 50px;
+  outline: none;
+  text-align: center;
+  position: absolute;
+  font-size: calc(2vmax - 2px);
+  bottom: 4%;
+  left: 2%;
+  font-family: Lausanne;
+  cursor: none;
+}
+
+#sound {
+  border: solid;
+  background-color: transparent;
+  color: white;
+  border-width: 1px;
+  padding: 10px 30px;
+  border-radius: 50px;
+  outline: none;
+  text-align: center;
+  position: absolute;
+  font-size: calc(2vmax - 2px);
+  bottom: 4%;
+  right: 2%;
+  font-family: Lausanne;
+  cursor: none;
+}
+
+#save {
+  border: solid;
+  background-color: transparent;
+  color: white;
+  border-width: 1px;
+  padding: 10px 30px;
+  border-radius: 50px;
+  outline: none;
+  text-align: center;
+  position: absolute;
+  font-size: calc(2vmax - 2px);
+  top: 4%;
+  right: 2%;
+  display: block;
+  margin: auto;
+  font-family: Lausanne;
+  cursor: none;
+}
+
+#typespecimen {
+  border: solid;
+  background-color: transparent;
+  color: white;
+  border-width: 1px;
+  padding: 10px 30px;
+  border-radius: 50px;
+  outline: none;
+  position: absolute;
+  font-size: calc(2vmax - 2px);
+  margin: auto;
+  font-family: Lausanne;
+  cursor: none;
+  top: 6.2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#cursor1 {
+  height: 10px;
+  width: 10px;
+  border-radius: 20px;
+  background-color: white;
+  position: absolute;
+  z-index: 1;
+}
+
+#range-typescale {
+  -webkit-appearance: none;
+  width: 150px;
+  height: 1px;
+  background: white;
+  outline: none;
+  cursor: none;
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  display: block;
+}
+#range-typescale::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1px;
+  height: 20px;
+  background-color: white;
+  padding: 1px;
+  border-radius: 20px;
+  outline: none;
+  cursor: none;
+}
+
+#ribbonwidth {
+  -webkit-appearance: none;
+  width: 150px;
+  height: 1px;
+  background: white;
+  outline: none;
+  cursor: none;
+  top: 20%;
+  left: 2%;
+  font-size: 40px;
+  position: absolute;
+  display: block;
+  transform-origin: 50px 50px;
+}
+#ribbonwidth::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1px;
+  height: 20px;
+  background-color: white;
+  padding: 1px;
+  border-radius: 20px;
+  outline: none;
+  cursor: none;
+}
+
+#ribbondensity {
+  -webkit-appearance: none;
+  width: 150px;
+  height: 1px;
+  background: white;
+  outline: none;
+  top: 30%;
+  left: 2%;
+  font-size: 40px;
+  position: absolute;
+  display: block;
+  transform-origin: 50px 50px;
+  cursor: none;
+}
+#ribbondensity::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1px;
+  height: 20px;
+  background-color: white;
+  padding: 1px;
+  border-radius: 20px;
+  outline: none;
+  cursor: none;
+}
+#strokewidth {
+  -webkit-appearance: none;
+  width: 150px;
+  height: 1px;
+  background: white;
+  outline: none;
+  cursor: none;
+  top: 40%;
+  left: 2%;
+  font-size: 40px;
+  position: absolute;
+  display: block;
+  transform-origin: 50px 50px;
+}
+#strokewidth::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 1px;
+  height: 20px;
+  background-color: white;
+  padding: 1px;
+  border-radius: 20px;
+  outline: none;
+  cursor: none;
+}
+
+div1 {
+  font-size: calc(1.5vmax - 1px);
+  color: white;
+  font-family: sans-serif;
+  position: absolute;
+  top: 4%;
+  left: 2%;
+  display: block;
+  margin: auto;
+  font-family: Lausanne;
+  cursor: none;
+  text-align: center;
+}
+
+div2 {
+  font-size: calc(1.5vmax - 1px);
+  color: white;
+  font-family: sans-serif;
+  position: absolute;
+  top: 14%;
+  left: 2%;
+  display: block;
+  margin: auto;
+  font-family: Lausanne;
+  cursor: none;
+  text-align: center;
+}
+
+div3 {
+  font-size: calc(1.5vmax - 1px);
+  color: white;
+  font-family: sans-serif;
+  position: absolute;
+  top: 24%;
+  left: 2%;
+  display: block;
+  margin: auto;
+  font-family: Lausanne;
+  cursor: none;
+  text-align: center;
+}
+
+div4 {
+  font-size: calc(1.5vmax - 1px);
+  color: white;
+  font-family: sans-serif;
+  position: absolute;
+  top: 34%;
+  left: 2%;
+  display: block;
+  margin: auto;
+  font-family: Lausanne;
+  cursor: none;
+  text-align: center;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: rgb(255, 255, 255);
+}
